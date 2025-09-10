@@ -11,14 +11,14 @@
     
 
         <!-- Offline Banner -->
-        <div class="offline-banner" id="offlineBanner">
+        <div class="offline-banner" id="offlineBanner" data-i18n="offline">
             📡 Offline Mode - Using cached data
         </div>
 
         <!-- Header -->
         <div class="header tribal-pattern">
             <div class="header-top">
-                <div class="app-title">
+                <div class="app-title" data-i18n="app_title">
                     🌾 SmartKrishi
                 </div>
                 <div class="searchWrapper">
@@ -41,8 +41,8 @@
             </div>
 
             <div class="weather-summary">
-                <div id="div-1">🌤 26°C | Humid: 78%</div>
-                <div id="div-2">Rain: 40% | Wind: 12 km/h</div>
+                <div id="div-1" data-i18n="weather_summary1">🌤 26°C | Humid: 78%</div>
+                <div id="div-2" data-i18n="weather_summary2">Rain: 40% | Wind: 12 km/h</div>
             </div>
         </div>
 
@@ -50,19 +50,19 @@
         <div class="quick-stats">
             <div class="stat-card">
                 <div class="stat-value">6.2</div>
-                <div class="stat-label">pH Level</div>
+                <div class="stat-label data-i18n="ph_label"">pH Level</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value">72%</div>
-                <div class="stat-label">Moisture</div>
+                <div class="stat-label data-i18n="moisture_label"">Moisture</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value">High</div>
-                <div class="stat-label">Iron</div>
+                <div class="stat-label data-i18n="iron_label"">Iron</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value">Med</div>
-                <div class="stat-label">Nitrogen</div>
+                <div class="stat-label" data-i18n="nitrogen_label">Nitrogen</div>
             </div>
         </div>
 
@@ -70,19 +70,19 @@
         <div class="nav-tabs">
             <button class="nav-tab active" onclick="switchTab('home')">
                 <div class="tab-icon">🏠</div>
-                <div>होम</div>
+                <div data-i18n="tab_home">होम</div>
             </button>
             <button class="nav-tab" onclick="switchTab('crops')">
                 <div class="tab-icon">🌾</div>
-                <div>फसल</div>
+                <div data-i18n="tab_crops">फसल</div>
             </button>
             <button class="nav-tab" onclick="switchTab('analysis')">
                 <div class="tab-icon">📊</div>
-                <div>विश्लेषण</div>
+                <div data-i18n="tab_analysis">विश्लेषण</div>
             </button>
             <button class="nav-tab" onclick="switchTab('market')">
                 <div class="tab-icon">💰</div>
-                <div>बाजार</div>
+                <div data-i18n="tab_market">बाजार</div>
             </button>
         </div>
 
@@ -92,39 +92,39 @@
             <div id="home" class="tab-content active">
                 <!-- Alert Card -->
                 <div class="card alert-card">
-                    <div class="card-title">
+                    <div class="card-title" data-i18n="alert_title">
                         ⚠ मिट्टी में नमी कम है
                     </div>
-                    <div style="font-size: 0.9em; margin-top: 8px;">
+                    <div style="font-size: 0.9em; margin-top: 8px;" data-i18n="alert_text">
                         खेत-A में सिंचाई की जरूरत है। अगले 24 घंटों में पानी दें।
                     </div>
                 </div>
 
                 <!-- Weather Widget -->
                 <div class="weather-widget">
-                    <div class="card-title" style="color: white; margin-bottom: 16px;">
+                    <div class="card-title" style="color: white; margin-bottom: 16px;" data-i18n="forecast_title">
                         🌦 मौसम पूर्वानुमान
                     </div>
                     <div class="weather-current">
                         <div>
                             <div class="weather-temp">26°</div>
-                            <div style="font-size: 0.9em; opacity: 0.9;">बादल छाए हुए</div>
+                            <div style="font-size: 0.9em; opacity: 0.9;" data-i18n="forecast_status">बादल छाए हुए</div>
                         </div>
                         <div style="font-size: 3em; opacity: 0.8;">⛅</div>
                     </div>
                     <div class="weather-forecast">
                         <div class="forecast-day">
-                            <div>आज</div>
+                            <div data-i18n="today">आज</div>
                             <div>🌧</div>
                             <div>26°/19°</div>
                         </div>
                         <div class="forecast-day">
-                            <div>कल</div>
+                            <div data-i18n="tomorrow">कल</div>
                             <div>🌦</div>
                             <div>28°/20°</div>
                         </div>
                         <div class="forecast-day">
-                            <div>परसों</div>
+                            <div data-i18n="day_after">परसों</div>
                             <div>☀</div>
                             <div>30°/22°</div>
                         </div>
@@ -133,18 +133,18 @@
 
                 <!-- Soil Health -->
                 <div class="card">
-                    <div class="card-title">
+                    <div class="card-title" data-i18n="soil_health">
                         🌱 मिट्टी का स्वास्थ्य
                     </div>
                     <div style="margin-top: 12px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                            <span>स्वास्थ्य स्कोर</span>
+                            <span data-i18n="health_score"> स्वास्थ्य स्कोर</span>
                             <span style="font-weight: bold; color: #4CAF50;">7.2/10</span>
                         </div>
                         <div class="progress-bar" style="background: #e0e0e0;">
                             <div class="progress-fill" style="width: 72%; background: #4CAF50;"></div>
                         </div>
-                        <div style="font-size: 0.85em; color: #666; margin-top: 8px;">
+                        <div style="font-size: 0.85em; color: #666; margin-top: 8px;" data-i18n="soil_info">
                             लाल मिट्टी | आयरन की अधिकता | जैविक तत्व: 2.4%
                         </div>
                     </div>
@@ -154,10 +154,10 @@
             <!-- Crops Tab -->
             <div id="crops" class="tab-content">
                 <div class="card">
-                    <div class="card-title">
+                    <div class="card-title" data-i18n="crop_suggestions">
                         🎯 सुझावित फसलें (खरीफ 2024)
                     </div>
-                    <div style="font-size: 0.85em; color: #666; margin-bottom: 16px;">
+                    <div style="font-size: 0.85em; color: #666; margin-bottom: 16px;" data-i18n="crop_context">
                         झारखंड की जलवायु और आपकी मिट्टी के अनुसार
                     </div>
                 </div>
@@ -165,13 +165,13 @@
                 <div class="crop-recommendation">
                     <div class="crop-avatar">🌾</div>
                     <div class="crop-info">
-                        <div class="crop-name">धान (स्वर्णा किस्म)</div>
+                        <div class="crop-name" data-i18n="crop1_name">धान (स्वर्णा किस्म)</div>
                         <div class="crop-details">
-                            <span>उत्पादन: 38 क्विंटल/हे</span>
-                            <span>लाभ: ₹28,000/हे</span>
+                            <span data-i18n="crop1_yield">उत्पादन: 38 क्विंटल/हे</span>
+                            <span data-i18n="crop1_profit">लाभ: ₹28,000/हे</span>
                         </div>
                         <div class="sustainability-score">
-                            <span style="font-size: 0.8em;">स्थिरता:</span>
+                            <span style="font-size: 0.8em;" data-i18n="sustainability">स्थिरता:</span>
                             <div class="score-bar">
                                 <div class="score-fill excellent" style="width: 85%;"></div>
                             </div>
@@ -216,7 +216,7 @@
                     <div class="crop-score">86%</div>
                 </div>
 
-                <button class="action-btn" onclick="getDetailedCropPlan()">
+                <button class="action-btn"data-i18n="detailed_plan" onclick="getDetailedCropPlan()">
                     विस्तृत खेती योजना पाएं 📋
                 </button>
             </div>
@@ -224,50 +224,72 @@
             <!-- Analysis Tab -->
             <div id="analysis" class="tab-content">
                 <div class="card">
-                    <div class="card-title">
+                    <div class="card-title" data-i18n="soil_report">
                         🔬 मिट्टी विश्लेषण रिपोर्ट
                     </div>
                     <div style="margin-top: 12px; font-size: 0.9em;">
-                        <div style="margin-bottom: 8px;"><strong>मिट्टी का प्रकार:</strong> लाल लेटेराइट</div>
-                        <div style="margin-bottom: 8px;"><strong>जैविक कार्बन:</strong> 2.4% (अच्छा)</div>
-                        <div style="margin-bottom: 8px;"><strong>CEC:</strong> 15.2 meq/100g</div>
-                        <div style="color: #4CAF50;"><strong>अंतिम अपडेट:</strong> 3 घंटे पहले (IoT सेंसर)</div>
+                        <div style="margin-bottom: 8px;" data-i18n="soil_type"><strong>मिट्टी का प्रकार:</strong> लाल लेटेराइट</div>
+                        <div style="margin-bottom: 8px;" data-i18n="organic_carbon"><strong>जैविक कार्बन:</strong> 2.4% (अच्छा)</div>
+                        <div style="margin-bottom: 8px;" data-i18n="cec"><strong>CEC:</strong> 15.2 meq/100g</div>
+                        <div style="color: #4CAF50;" data-i18n="last_update"><strong>अंतिम अपडेट:</strong> 3 घंटे पहले (IoT सेंसर)</div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-title">
+                    <div class="card-title" data-i18n="crop_history">
                         🔄 फसल चक्र इतिहास
                     </div>
                     <div style="margin-top: 12px; font-size: 0.9em;">
-                        <div style="margin-bottom: 8px;"><strong>2024 खरीफ:</strong> धान</div>
-                        <div style="margin-bottom: 8px;"><strong>2024 रबी:</strong> गेहूं</div>
-                        <div style="margin-bottom: 8px;"><strong>2023 खरीफ:</strong> मक्का</div>
-                        <div style="color: #FF9800; margin-top: 12px;"><strong>सुझाव:</strong> दलहनी फसल उगाएं (नाइट्रोजन फिक्सेशन के लिए)</div>
+                        <div style="margin-bottom: 8px;" data-i18n="history_kharif"><strong>2024 खरीफ:</strong> धान</div>
+                        <div style="margin-bottom: 8px;" data-i18n="history_rabi"><strong>2024 रबी:</strong> गेहूं</div>
+                        <div style="margin-bottom: 8px;" data-i18n="history_kharif2"><strong>2023 खरीफ:</strong> मक्का</div>
+                        <div style="color: #FF9800; margin-top: 12px;"  data-i18n="history_suggestion"><strong>सुझाव:</strong> दलहनी फसल उगाएं (नाइट्रोजन फिक्सेशन के लिए)</div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-title">
+                    <div class="card-title" data-i18n="irrigation_analysis">
                         💧 सिंचाई विश्लेषण
                     </div>
                     <div style="display: flex; justify-content: space-between; margin-top: 12px;">
                         <div>
-                            <div style="font-size: 0.8em; color: #666;">वर्तमान आवश्यकता</div>
-                            <div style="font-size: 1.2em; font-weight: bold; color: #FF9800;">मध्यम</div>
+                            <div style="font-size: 0.8em; color: #666;" data-i18n="current_need">वर्तमान आवश्यकता</div>
+                            <div style="font-size: 1.2em; font-weight: bold; color: #FF9800;" data-i18n="need_level">मध्यम</div>
                         </div>
                         <div style="text-align: right;">
-                            <div style="font-size: 0.8em; color: #666;">अगली सिंचाई</div>
-                            <div style="font-size: 1.2em; font-weight: bold; color: #2E7D32;">2 दिन में</div>
+                            <div style="font-size: 0.8em; color: #666;" data-i18n="next_irrigation">अगली सिंचाई</div>
+                            <div style="font-size: 1.2em; font-weight: bold; color: #2E7D32;" data-i18n="in_days">2 दिन में</div>
                         </div>
                     </div>
                 </div>
 
-                <button class="action-btn" onclick="downloadReport()">
+                <button class="action-btn" data-i18n="download_report" onclick="downloadReport()">
                     📄 पूरी रिपोर्ट डाउनलोड करें
                 </button>
             </div>
 
+
+
+            <!-- Floating Chat Button -->
+<div class="floating-chat" onclick="toggleChat()">💬</div>
+
+<!-- Chat Overlay -->
+<div class="chat-overlay"></div>
+<div class="chat-panel">
+  <div class="chat-header">
+    <div>👨‍🌾 किसान सहायक</div>
+    <button onclick="toggleChat()">❌</button>
+  </div>
+  <div class="chat-messages"></div>
+  <div class="chat-input-area">
+    <input type="text" class="chat-input" placeholder="अपना सवाल पूछें..." data-i18n="ask_question">
+    <button class="voice-btn">🎤</button>
+    <button class="send-btn" onclick="sendMessage()">➡</button>
+  </div>
+</div>
+
+<!-- Camera Button -->
+<div class="floating-chat" style="bottom: 90px; background: linear-gradient(135deg,#1976D2,#1565C0);" onclick="openCamera()">📷</div>
 
 
     <script src="script.js"></script>
